@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Happy Airlines.wav-47868a2e74446202c0a0c818125747f9.sample"
+
+[deps]
+
+source_file="res://Assets/Happy Airlines.wav"
+dest_files=[ "res://.import/Happy Airlines.wav-47868a2e74446202c0a0c818125747f9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

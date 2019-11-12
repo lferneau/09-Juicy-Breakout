@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Funky Clubbing.wav-92ecc60d23f9e8a28f8257b34adb4626.sample"
+
+[deps]
+
+source_file="res://Assets/Funky Clubbing.wav"
+dest_files=[ "res://.import/Funky Clubbing.wav-92ecc60d23f9e8a28f8257b34adb4626.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

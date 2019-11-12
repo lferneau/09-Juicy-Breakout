@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/ball.gd" type="Script" id=1]
+[ext_resource path="res://Assets/ball.png" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=4]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.018
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 1
+emission_sphere_radius = 27.48
+flag_disable_z = true
+spread = 18.1
+gravity = Vector3( 5, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = -11.49
+linear_accel_random = 1.0
+damping = 31.03
+scale = 5.0
+scale_random = 1.0
+color = Color( 0.878431, 0.976471, 0, 0.623529 )
+hue_variation = 1.0
+hue_variation_random = 1.0
+anim_speed = 128.0
+anim_speed_random = 1.0
+anim_offset = 1.0
+anim_offset_random = 1.0
+
+[node name="Ball" type="RigidBody2D"]
+modulate = Color( 0.890196, 0.105882, 0.105882, 1 )
+material = SubResource( 4 )
+position = Vector2( 512, 480 )
+mode = 2
+physics_material_override = SubResource( 1 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_damp = 0.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.992157, 1, 0.0431373, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+modulate = Color( 0.796078, 0.976471, 0.054902, 1 )
+speed_scale = 1.94
+explosiveness = 0.07
+randomness = 1.0
+visibility_rect = Rect2( -10, -100, 200, 200 )
+process_material = SubResource( 5 )
